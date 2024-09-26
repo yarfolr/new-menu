@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>World Cuisine Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar">
+        <a href="#ukrainian">Ukrainian Dishes</a>
+        <a href="#international">International Dishes</a>
+        <a href="#drinks">Drinks</a>
+    </nav>
+
+    <!-- Burger Menu Icon -->
+    <div class="burger-menu" onclick="toggleMenu()">☰</div>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1>Ukrainian Cuisine in the Alps</h1>
+        <p>Experience the best of Ukrainian and world cuisine.</p>
+    </header>
+
+    <!-- Ukrainian Dishes Section -->
+    <section id="ukrainian" class="menu-section">
+        <h2>Ukrainian Dishes</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <a href="https://en.wikipedia.org/wiki/Borscht" target="_blank">
+                    <img src="./img/k_Photo_Recipes_2023-10-borscht_borscht-035.jpeg" alt="Borscht" class="dish-img">
+                    <h3>Borscht 🌶️</h3>
+                    <p>Ingredients: Beets, cabbage, potatoes, carrots, onions, garlic, tomato paste, beef broth.</p>
+                    <p><strong>Calories:</strong> 160 kcal | <strong>Price:</strong> $8</p>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="https://en.wikipedia.org/wiki/Varenyky" target="_blank">
+                    <img src="./img/varenyky-ukrainian-vareniki-1200.jpg" alt="Varenyky" class="dish-img">
+                    <h3>Varenyky 🌱</h3>
+                    <p>Ingredients: Flour, potato, cheese, onion, butter.</p>
+                    <p><strong>Calories:</strong> 300 kcal | <strong>Price:</strong> $10</p>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="https://en.wikipedia.org/wiki/Pampushky" target="_blank">
+                    <img src="./img/pampushky-5731a21227040.jpg" alt="Pampushky" class="dish-img">
+                    <h3>Pampushky 🌱</h3>
+                    <p>Ingredients: Flour, yeast, garlic, oil.</p>
+                    <p><strong>Calories:</strong> 250 kcal | <strong>Price:</strong> $6</p>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="https://en.wikipedia.org/wiki/Chicken_Kiev" target="_blank">
+                    <img src="./img/Chicken-Kiev_9.webp" alt="Chicken Kiev" class="dish-img">
+                    <h3>Chicken Kiev 🌶️</h3>
+                    <p>Ingredients: Chicken breast, butter, garlic, parsley, breadcrumbs.</p>
+                    <p><strong>Calories:</strong> 450 kcal | <strong>Price:</strong> $12</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- International Dishes Section -->
+    <section id="international" class="menu-section">
+        <h2>International Dishes</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <a href="https://en.wikipedia.org/wiki/Spaghetti_alla_Carbonara" target="_blank">
+                    <img src="./img/IMG_2626edit.jpg" alt="Carbonara" class="dish-img">
+                    <h3>Spaghetti Carbonara</h3>
+                    <p>Ingredients: Pasta, pancetta, eggs, Pecorino Romano cheese, black pepper.</p>
+                    <p><strong>Calories:</strong> 762 kcal | <strong>Price:</strong> $14</p>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="https://en.wikipedia.org/wiki/Paella" target="_blank">
+                    <img src="./img/Paella-7.jpg" alt="Paella" class="dish-img">
+                    <h3>Paella 🌶️</h3>
+                    <p>Ingredients: Rice, saffron, seafood (shrimp, mussels), chicken, bell peppers.</p>
+                    <p><strong>Calories:</strong> 900 kcal | <strong>Price:</strong> $18</p>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="https://en.wikipedia.org/wiki/Sushi" target="_blank">
+                    <img src="./img/360_F_160776300_2VfVdDN1wC8JuawVMiMOte0vSOF8xVxp.jpg" alt="Sushi" class="dish-img">
+                    <h3>Sushi 🌶️</h3>
+                    <p>Ingredients: Vinegared rice, seafood, vegetables, seaweed.</p>
+                    <p><strong>Calories:</strong> 300 kcal | <strong>Price:</strong> $15</p>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="https://en.wikipedia.org/wiki/Pad_Thai" target="_blank">
+                    <img src="./img/Chicken-Pad-Thai_9-SQ.webp" alt="Pad Thai" class="dish-img">
+                    <h3>Pad Thai 🌶️</h3>
+                    <p>Ingredients: Rice noodles, shrimp, peanuts, bean sprouts, egg, tofu.</p>
+                    <p><strong>Calories:</strong> 700 kcal | <strong>Price:</strong> $12</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Drinks Section -->
+    <section id="drinks" class="menu-section">
+        <h2>Drinks</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <a href="https://en.wikipedia.org/wiki/Horilka" target="_blank">
+                    <img src="./img/Nemiroff_Horilka.jpg" alt="Horilka" class="dish-img">
+                    <h3>Horilka (Vodka)</h3>
+                    <p><strong>Price:</strong> $5 (50ml shot)</p>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="https://en.wikipedia.org/wiki/Kvass" target="_blank">
+                    <img src="./img/Kvas.jpg" alt="Kvass" class="dish-img">
+                    <h3>Kvass</h3>
+                    <p><strong>Price:</strong> $3</p>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="https://en.wikipedia.org/wiki/Compote" target="_blank">
+                    <img src="./img/compote.jpeg" alt="Compote" class="dish-img">
+                    <h3>Fruit Compote 🌱</h3>
+                    <p><strong>Price:</strong> $4</p>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="https://en.wikipedia.org/wiki/Herbal_tea" target="_blank">
+                    <img src="./img/compote.jpeg" alt="Herbal Tea" class="dish-img">
+                    <h3>Herbal Tea 🌱</h3>
+                    <p><strong>Price:</strong> $2</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" onclick="scrollToTop()">⬆</button>
+
+    <!-- Credit Note -->
+    <footer class="footer">
+        <p>This was made by Yaroslav Antoniuk</p>
+    </footer>
+
+</body>
+</html>
